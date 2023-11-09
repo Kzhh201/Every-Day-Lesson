@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML From</title>
+    <style>
+        form    {
+            background-color:blueviolet;
+            width: 40%;
+            margin:auto;
+            padding: 30px;
+            border: black;
+        }
+
+        /*group selector*/
+        #fnm, #lnm, #data-list   {
+            width: 230px;
+            height: 30px;
+        }
+
+        select  {
+            width: 85px;
+           
+        }
+
+
+    </style>
+</head>
+<body>
+    <form>
+
+        <h1>Sing In</h1>
+
+        <!--Data List-->
+        <input list="name_id" name="name_id" id="data-list" value="Mr">
+        <datalist id="name_id">
+            <option value="Ms">Ms</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+        </datalist>
+        <br><br><br>
+
+        <!--Input elements-->
+        <label for="fnm">First name:</label>
+        <br>
+        <input type="text" name="fnm" value="Jman" id="fnm">
+        <br><br>
+
+        <label for="lnm">Last name:</label>
+        <br>
+        <input type="text" name="lnm" value="Knam" id="lnm">
+        <br><br>
+
+        <!--buttons-->
+        <input type="submit" value="Submit">
+        <button type="submit">Login</button>
+        <button type="button">Click here</button>
+        <button type="button"><a href="15_iframe.html">Go Now</a></button>
+        <button type="reset">Clear</button>
+        <button type="button" onclick="alert('Hello World')">Click Now</button>
+        <br><br><br>
+
+        <!--radio-->
+        <label>Gender Information</label><br>
+        <input type="radio" id="male" value="Male" name="gender">
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="female">Other</label>
+        <br><br><br>
+
+        <!--checkbox-->
+        <label>Education Level</label><br><br>
+        <input type="checkbox" id="be" name="degree1" value="BE">
+        <label for="be">BE</label><br>
+
+        <input type="checkbox" id="idcse" name="degree2" value="IDCSE">
+        <label for="idcse">IDCSE</label><br>
+
+        <input type="checkbox" id="ged" name="degree3" value="GED">
+        <label for="ged">GED</label>
+        <br><br><br>
+
+        <!--Dropdown List-->
+        <label>Birthdate Information</label><br>
+        <select name="day" id="day" size="2" multiple>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <select>
+            <option value="jan">January</option>
+            <option value="fed">February</option>
+            <option value="mar">March</option>
+        </select>
+        <select>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+        </select>
+        <br><br><br>
+
+        <!--Text Area-->
+        <label>Decription</label><br>
+        <textarea name="des" rows="8" cols="35"></textarea>
+        <br><br><br>
+
+        <!--Color-->
+        <label>Color:</label>
+        <input type="color" value="black" name="fcol" placeholder="color">
+        <br><br><br>
+
+        <!--Date-->
+        <label>Date:</label>
+        <input type="date" value="3" name="date" placeholder="date">
+        <br><br><br>
+
+        <!--Datetime Local-->
+        <label>Birth Date Local:</label>
+        <input type="datetime-local" value="A,B,C,D" name="dtlcol" placeholder="Datetime-local">
+        <br><br><br>
+
+        <!--File-->
+        <label>File:</label>
+        <input type="file" value="" name="file" placeholder="file">
+        <br><br><br>
+
+        <!--Image-->
+        <label>Img:</label>
+        <input type="image" src="Image/purple sunset.jpg" alt="submit" width="45px" height="50px">
+        <br><br><br>
+
+        <!--Month-->
+        <label>Month:</label>
+        <input type="month" value="7" name="month" placeholder="month">
+        <br><br><br>
+
+        <!--Number-->
+        <label>Number:</label>
+        <input type="number" value="2" name="nb" placeholder="Number">
+        <br><br><br>
+
+        <!--Range-->
+        <label>Volue:</label>
+        <input type="range" name="volue" value="volue" placeholder="Volue">
+        <br><br><br>
+
+        <!--Search-->
+        <label>Search Box:</label>
+        <input type="search" name="sh" value="sh" placeholder="Search">
+        <br><br><br>
+
+        <!--Tel-->
+        <label>Phone Number</label>
+        <input type="tel" name="pho" placeholder="09-123456789" pattern="[09]-[0-9]{9}">
+        <br><br><br>
+
+    </form>
+</body>
+</html>
